@@ -48,7 +48,12 @@
     {
       "type": "shell",
       "execute_command":    "chmod +x {{ .Path }}; {{ .Vars }} sudo -E '{{ .Path }}'",
-      "scripts": "container.sh"
+      "scripts": "install_service.sh"
+    },
+    {
+      "type": "shell",
+      "execute_command":    "chmod +x {{ .Path }}; {{ .Vars }} sudo -E '{{ .Path }}'",
+      "scripts": "build_service_container.sh"
     }
     ]
 
