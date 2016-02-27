@@ -48,7 +48,7 @@
     {
       "type": "shell",
       "execute_command":    "chmod +x {{ .Path }}; {{ .Vars }} sudo -E '{{ .Path }}'",
-      "scripts": "deploy_containers.sh"
+      "scripts": "container.sh"
     }
     ]
 
